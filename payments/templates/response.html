@@ -1,0 +1,14 @@
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+     <title>Paytm Secure Online Payment Gateway</title>
+   </head>
+   <body>
+      <FORM NAME='TESTFORM' ACTION='https://merchant.com/callback/paytm/response/' METHOD='POST'>
+            {% for key,value in paytm.items %}
+                  {{key}} =  {{value}} <br>
+            {% endfor %}
+      </FORM>
+   </body>
+ <script type="text/javascript">  document.forms[0].submit();</script>    
+</html> 
